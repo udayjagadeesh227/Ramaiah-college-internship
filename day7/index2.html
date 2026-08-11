@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:100px;
+            height: 100px;
+            background: bisque;
+            margin: 50px;
+            border-radius: 10px;
+            animation: moveBox 3s ease;
+        }
+        @keyframes moveBox{
+            from{
+                transform: translateX(150px);
+            }
+            to{
+                transform: translate(0px)
+            }
+                     
+        }
+        .ball{
+            background-color: rgb(161, 145, 121);
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin-top: 70px;
+            animation: bounce 1s ease infinite;
+        }
+        @keyframes bounce{
+            
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-40px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+
+        }
+        .spinner{
+            width: 60px;
+            height: 60px;
+            border: 8px solid rgb(89, 78, 78);
+            border-top: 8px solid rgb(60, 60, 219);
+            border-radius: 50px;
+            margin-top: 70px;
+            animation: spin 3s linear infinite ;
+
+        }
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        h1{
+            animation: fadeInUp 3s ease;
+        }
+        @keyframes fadeInUp{
+            from{
+                opacity: 0;
+                transform: translateY(20px);
+
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="ball"></div>
+    <div class="spinner"></div>
+    <h1>HI, I AM JOHN</h1>
+</body>
+</html>
