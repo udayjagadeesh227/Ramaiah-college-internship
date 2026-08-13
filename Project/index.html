@@ -17,6 +17,7 @@
     <meta name="twitter:description" content="Check out my profile.">
 
     <link rel="shortcut icon" href="/web image.png" type="image/x-icon">
+    
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -26,10 +27,10 @@
         <nav class="navbar">
             <div class="logo">UJ</div>
             <ul class="nav-links">
-                <li><a href="">About</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -37,9 +38,9 @@
      <main>
         <!-- Hero section -->
          <section class="hero-section" id="hero">
-            <h1>Hi I'm Uday</h1>
-            <p>I build fast, accessible and responsive websites.</p>
-            <div>
+            <h1 class="hero-title">Hi I'm Uday</h1>
+            <p class="tagline">I build fast, accessible and responsive websites.</p>
+            <div class="hero-buttons">
                 <a href="" class="btn btn-primary">View My Work</a>
                 <a href="" class="btn btn-secondary">Contact Me</a>
             </div>
@@ -47,14 +48,13 @@
         <!-- About Section -->
          <section class="about-section" id="about">
             <h2>About Me</h2>
-            <p>I am a passionate web developer pursuing a degree in Information Science and Engineering. I enjoy learning new technologies and improving my skills.</p>
             <div class="about-content">
                 <figure class="profile-picture">
-                    <img src="../WhatsApp Image 2026-08-06 at 11.01.37 AM.jpeg" alt="profile picture">
+                    <img src="../Profile pic.jpeg" alt="profile picture">
                     <figcaption>Uday J - web developer</figcaption>
                 </figure>
                 <div class="about-text">
-                    <p>I am a dedicated and enthusiastic web developer with a strong foundation in computer science and engineering principles.</p>
+                    <p>I am a passionate web developer pursuing a B-Tech in Information Science and Engineering. I enjoy learning new technologies, building projects, and exploring areas like AI, software development, and data-driven solutions.</p>
             </div> 
         </section>
         <!-- Skills Section -->
@@ -68,10 +68,10 @@
             </div>
         </section>
         <!-- Projects Section -->
-         <section>
+         <section class="project-section" id="projects">
             <h2>My Projects</h2>
             <div class="project-grid">
-                <article>
+                <article class="project-card">
                     <img src="../images weather.png"alt="weather image" width="100" height="100">
                     <h3>Weather App</h3>
                     <p>real time weather dashboard</p>
@@ -79,12 +79,12 @@
                         <span class="tag">React</span>
                         <span class="tag">API</span>
                     </div>
-                    <a href="" class="btn">Live demo</a>
-                    <a href="" class="btn">Github</a>
+                    <a href="" class="button">Live demo</a>
+                    <a href="" class="button">Github</a>
                 </article>
                 <br>
                 <br>
-                <article>
+                <article class="project-card">
                     <img src="../logo kisan setu.jpeg"alt="kisan image" width="100" height="100">
                     <h3>Kisan Setu App</h3>
                     <p>Smart agricultural supply chain management</p>
@@ -92,12 +92,12 @@
                         <span class="tag">React</span>
                         <span class="tag">API</span>
                     </div>
-                    <a href="" class="btn">Live demo</a>
-                    <a href="" class="btn">Github</a>
+                    <a href="" class="button">Live demo</a>
+                    <a href="" class="button">Github</a>
                 </article>
                 <br>
                 <br>
-                <article>
+                <article class="project-card">
                     <img src="../Calculator.jpg"alt="kisan image" width="100" height="100">
                     <h3>Calculator App</h3>
                     <p>Simple calculator application</p>
@@ -105,16 +105,16 @@
                         <span class="tag">React</span>
                         <span class="tag">API</span>
                     </div>
-                    <a href="" class="btn">Live demo</a>
-                    <a href="" class="btn">Github</a>
+                    <a href="" class="button">Live demo</a>
+                    <a href="" class="button">Github</a>
                 </article>
             </div>
          </section>
         <!-- Contact Section -->
         <section class="contact-section" id="contact">
             <h2>Contact Me</h2>
-            <form actions="" > 
-                <div class="form-group">
+            <form actions="" id="contact-form" > 
+                <div class="form-group" >
                     <label for="name">Name</label>
                     <input type="text"required>
                 </div>
@@ -126,15 +126,15 @@
                     <label for="message">Message</label>
                     <textarea name="message" id="message" rows="5" required></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+                <button type="submit" id="submit">Send Message</button>
             </form>
         </section>
      </main>
 
     <!-- Footer -->
-     <footer>
+     <footer id="footer">
         <p>&copy; 2026 Uday J. All rights reserved.</p>
-        <p>Built with HTML</p>
+        <p>Built with HTML, CSS and JavaScript.</p>
         <nav>
             <a href="https://github.com/udayjagadeesh227" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/uday-j-171536418?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>

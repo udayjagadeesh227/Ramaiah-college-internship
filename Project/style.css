@@ -1,0 +1,295 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0D47A1;
+    color: white;
+    align-items: center;
+    padding: 15px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    transition: color 0.5s ease;
+}
+.nav-links a:hover{
+    color: rgb(83, 199, 219);
+}
+/* Hero section */
+.hero-section{
+background-color: #E3F2FD;
+padding: 150px;
+text-align: center;
+}
+.hero-section h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.hero-title{
+    animation: fadeInup 0.8s ease;
+    color: rgb(10, 3, 3);
+}
+.tagline{
+    animation: fadeInup 1s ease;
+    color: rgb(48, 38, 38);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.hero-buttons{
+    animation: fadeInup 1.2s ease;
+    color: rgb(48, 38, 38);
+}
+@keyframes fadeInup{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.btn{
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    gap: 10px;
+}
+.btn-primary{
+    background: rgb(131, 236, 255);
+    color: blueviolet;
+    
+}
+.btn-primary:hover{
+    background: transparent;
+    border: 1px solid black;
+    color: blueviolet;
+}
+.btn-secondary{
+    background: transparent;
+    border: 1px solid black;
+    color: blueviolet;
+   
+}
+.btn-secondary:hover{
+    background:  mediumturquoise;
+    color: blueviolet;
+}
+/* About section */
+.about-section{
+    background-color: #FFFFFF;
+    margin-bottom: 60px;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+}
+.about-section h2{
+    color: rgb(7, 71, 71);
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+.about-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.profile-picture img{
+    height: 270px;
+    width: 270px;
+}
+.about-text{
+    padding-top: 80px;
+    color: rgb(51, 51, 95);
+    font-size: 25px; 
+}
+figcaption{
+    color: black;
+    font-weight: bold;
+}
+/* Skill section */
+.skills-section{
+    background-color: #BBDEFB;
+    color: #0D47A1;
+    text-align: center;
+    align-items: center;
+}
+.skills-section h2{
+    font-size: 40px;
+    padding: 10px;
+}
+.skills-grid{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 480px;
+    color: rgb(114, 114, 241);
+}
+.skill-item{
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* project section */
+.project-grid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background-color: #F5F9FC;
+}
+.project-section h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    color: rgb(60, 53, 104);
+     background-color: #E3F2FD;
+}
+.project-card{
+    border:2px solid rgb(155, 155, 237);
+    gap: 10px;
+    background-color: rgb(169, 223, 223);
+    border-radius: 10px;
+    padding: 15px;
+}
+.project-card img{
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+}
+.project-card:hover{
+    border:2px solid darkmagenta;
+    gap: 10px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+.project-card.h3{
+    color: black;
+    font-weight: bold;
+}
+.project-card.p{
+    color: black;
+}
+.project-tags{    
+    color:rgb(41, 32, 20);
+    margin-bottom: 10px; 
+    justify-content: space-between;
+}
+.project-card h3:hover{
+    color: rgb(118, 42, 42);
+}
+.button{
+    color: rgb(4, 4, 4);
+    text-decoration: none;
+    border: 2px solid rgb(35, 24, 38);
+    padding: 8px;
+    border-radius: 8px;
+    background-color: rgb(225, 236, 236);
+}
+.button:hover{
+    background-color: rgb(86, 118, 91);
+}
+/* Contact section */
+.contact-section{
+    /* background:url(https://pngmagic.com/image_small/seo-optimized-website-hero-background-for-business_J8YD.webp) ; */
+    background-color: #E1F5FE;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 70vh; */
+}
+.contact-section h2{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-group label{
+    font-weight: bold;
+    color: rgb(6, 17, 89);
+    margin-bottom: 8px;
+    display: block;
+    font-size: 20px;
+}
+.form-group input,
+.form-group textarea{
+    width: 50%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.form-group input:focus,
+.form-group textarea:focus{
+    outline: none;
+    border-color: aqua;
+}
+section{
+    padding: 80px;
+}
+#contact-form{
+    max-width: 600px;
+    padding-left: 400px;
+}
+#submit{
+    padding: 10px;
+    border-radius: 8px;
+    background-color:rgb(7, 208, 223) ;
+    border: none;
+    font-weight: bold;
+}
+#submit:hover{
+    background-color: transparent;
+    border: 2px solid aqua;
+    color: rgb(102, 107, 208);
+}
+.form-group input:hover,
+.form-group textarea:hover{
+    border-color: aqua;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    padding: 50px;
+    background-color: #0D47A1;
+    }
+footer p{
+    color: aliceblue;
+    font-size: 20px;
+}
+#footer a{
+    text-decoration: none;
+    color: violet;
+    padding: 2px;
+    border: 1px solid cornflowerblue;
+    border-radius: 9px;  
+    background-color:transparent;
+}
+#footer a:hover{
+    background-color: rgb(16, 225, 200);
+    color: #E1F5FE;
+}
+#footer{
+    margin-top: 15px;
+}
