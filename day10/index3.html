@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            background-color: black;
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 id="demo">Hello Everyone</h1>
+    <a href="https://www.google.com">go to google</a> -->
+    <button onclick="change()">Click me to change the background</button>
+    <script>
+       /*  let result = document.querySelector("h1");
+        console.log(result);
+        result.textContent = "New text";
+        result.innerHTML= "<span> hello </span>"; */
+        // let result = document.querySelector("h1");
+        // result.classList.toggle("active");
+        // result.classList.add("active");
+        // result.classList.remove("active");
+        // let link = document.querySelector("a");
+        // link.href = "https://www.youtube.com";
+        function change(){
+            document.querySelector("button").classList.toggle("active");
+        }
+    </script>
+    
+</body>
+</html>
