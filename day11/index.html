@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="mybtn">Click Me</button>
+    <h3 id="status">light is  OFF</h3>
+    <button id="swbtn">Turn on</button> -->
+    <!-- <h3 id="status">Move your mouse over me</h3> -->
+     <form action="" id="loginForm">
+        <input type="text" placeholder="Enter your name">
+        <input type="password" placeholder="Enter Your password">
+        <button type="submit">Login</button>
+    </form>
+
+    
+    <script>
+        /* let btn = document.getElementById("mybtn");
+        btn.addEventListener("click", function(){
+            alert("You clicked the button");//alert box
+            // console.log("You clicked the button");
+        });
+
+
+
+        let swbtn = document.getElementById("swbtn");
+        let status = document.getElementById("status");
+        swbtn.addEventListener("click", function(){
+            status.textContent = "light is ON";
+            swbtn.textContent = "turn OFF";
+        }) */
+        
+        /* let status = document.getElementById("status");
+        status.addEventListener("mouseover",function(){
+            status.textContent = "Mouse is here"; */
+            //mouse out can also be used in place of mouse over
+
+       // })
+
+       let form = document.getElementById("loginForm");
+      form.addEventListener("submit", function(event){
+        event.preventDefault();
+        alert("Login button is clicked")
+ 
+      })
+    </script>
+</body>
+</html>
+<!-- callback function -- a call back function is a function that is passed as an argument to another function addEventlistner(event, callback)
+
+function clicked(){
+    alert("You have clicked on the button")
+}
+
+function sum(a,b){
+    return a+b;
+}
+
+a,b are called parameters/ arguments  -->
+
