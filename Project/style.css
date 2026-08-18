@@ -93,7 +93,7 @@ text-align: center;
 }
 /* About section */
 .about-section{
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin-bottom: 60px;
     align-items: center;
     text-align: center;
@@ -148,6 +148,9 @@ figcaption{
     font-size: 20px;
 }
 /* project section */
+.project-section{
+    background-color: #eef2f5;
+}
 .project-grid{
     display: flex;
     justify-content: space-around;
@@ -161,7 +164,7 @@ figcaption{
     margin-top: 50px;
     font-size: 40px;
     color: rgb(60, 53, 104);
-     background-color: #E3F2FD;
+    background-color: #E3F2FD;
 }
 .project-card{
     border:2px solid rgb(155, 155, 237);
@@ -292,4 +295,135 @@ footer p{
 }
 #footer{
     margin-top: 15px;
+}
+/* for dark mode */
+body.dark-theme{
+    background-color: #0c1323;
+    color: #e1f5fe;
+}
+body.dark-theme .navbar{
+    background-color: #07080b;
+    color: #e1f5fe ;
+}
+body.dark-theme .logo{
+    color: #e1f5fe;
+}
+body.dark-theme .nav-links a{
+    color: white;
+}
+body.dark-theme .nav-links a:hover{
+    color: red;
+}
+body.dark-theme .hero-section{
+    background-color: #1E293B;
+}
+body.dark-theme .hero-title{
+    color: cornsilk;
+}
+body.dark-theme .tagline{
+    color: antiquewhite;
+}
+body.dark-theme .btn-primary{
+    background-color: rgb(54, 211, 250);
+    color: rgb(232, 232, 255);
+}
+body.dark-theme .btn-primary:hover{
+    background-color:transparent;
+    border-color: rgb(54, 211, 250);
+    color: rgb(54, 211, 250);
+}
+body.dark-theme .btn-secondary{
+    background-color:transparent;
+    border-color: rgb(54, 211, 250);
+    color: rgb(54, 211, 250);
+}
+body.dark-theme .btn-secondary:hover{
+    background-color: rgb(54, 211, 250);
+    color: rgb(232, 232, 255);
+}
+body.dark-theme .about-section{
+    background-color: #273d61;
+}
+body.dark-theme .about-text{
+    color: #E3F2FD;
+}
+body.dark-theme .about-section h2{
+    color: #BBDEFB;
+}
+body.dark-theme .about-section figcaption{
+    color: #cfe2f1;
+}
+body.dark-theme .skills-section{
+    background-color: #0D1B2A;
+    color: #E2E8F0;
+}
+body.dark-theme .project-section{
+    background-color: #17385b;
+    color: #E2E8F0;
+}
+body.dark-theme .project-section h2{
+    color: #e0e5ec;
+    background-color: #292e37;
+}
+body.dark-theme .project-grid{
+     background-color: #292e37;
+}
+body.dark-theme .project-card{
+     background-color: #343b47;
+}
+body.dark-theme .project-card:hover{
+    background-color: rgb(118, 164, 248);
+    border-color: rgb(154, 246, 246);
+}
+body.dark-theme .project-tags{
+     background-color: transparent;
+     color: white;
+}
+body.dark-theme .project-card p{
+    color: azure;
+}
+body.dark-theme .button:hover{
+    background-color: transparent;
+}
+body.dark-theme .contact-section{
+    background-color: #3b4f6e;
+}
+body.dark-theme .contact-section h2{
+    color: rgb(247, 251, 252); 
+}
+body.dark-theme .form-group label{
+    color: rgb(198, 232, 232);
+}
+body.dark-theme .form-group input,
+body.dark-theme .form-group textarea{
+    background-color: azure;
+    color: rgb(41, 44, 44);
+    border-color: rgba(47, 47, 49, 0);
+}
+body.dark-theme .form-group input:focus,
+body.dark-theme .form-group textarea:focus{
+    border-color: rgb(128, 9, 9);
+}
+body.dark-theme .form-group input:hover,
+body.dark-theme .form-group textarea:hover{
+    border-color: rgb(43, 46, 45);
+}
+body.dark-theme footer{
+    background-color: #0d48a135;
+}
+body.dark-theme footer p{
+    color: darkcyan;
+}
+body.dark-theme #footer a{
+    color: darkcyan;
+    border-color: darkcyan;
+}
+body.dark-theme .contact-section #submit:hover{
+    background-color: transparent;
+    border: 2px solid aqua;
+    color: rgb(201, 201, 216);
+}
+body.dark-theme #footer a:hover{
+    background-color: transparent;
+    color: #d6dfe2;
 }
